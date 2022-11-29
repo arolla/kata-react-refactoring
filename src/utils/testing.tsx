@@ -54,7 +54,7 @@ export const mockRetrivedProductsWith = (
 
 export const renderComponent = async (shouldPayFees = true) => {
   render(<CartPage shouldPayFees={shouldPayFees} />);
-  await waitFor(() => global.fetch);
+  await waitFor(() => expect(screen.queryByText('No Products...')).not.toBeInTheDocument());
 };
 
 export const getBlock = (key: string): HTMLElement | null => {
