@@ -96,3 +96,7 @@ Amount to pay = total price + delivery fees
 > `npm start`: Launch the page
 >
 > `npm test`: Launch the tests
+
+## 🐛 Hidden bug
+
+There is a hidden bug in the component. Can you find it ?
